@@ -1,0 +1,11 @@
+/*Ashley John 8912618*/
+body{
+    font: normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(124, 33%, 66%, 0.679);
+}
+h2{
+     color: rgb(176, 100, 100);
+     font-size: 2em;
+}
