@@ -5,7 +5,50 @@ body{
     height: 100vh;
     background-color: hsla(124, 33%, 66%, 0.679);
 }
+
 h2{
-     color: rgb(176, 100, 100);
+     color:#B8b;
      font-size: 2em;
+}
+header{
+    background-color: hsl(201, 37%, 42%);
+}
+main{
+    float: left;
+    width: 65vw;
+    height: 60vh;
+    background-color: hsl(129, 37%, 41%)
+}
+
+aside{
+    float:right;
+    width: 25vw;
+    height: 60vh;
+    background-color: hsl(0, 38%, 42%)
+}
+
+footer{
+    clear: both;
+    background-color: hsl(320, 35%, 45%)
+}
+
+.structural{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#para1{
+    color: rgb(95, 72, 21);
+}
+#para2{
+    color: rgb(32, 70, 135);
+}
+
+a:hover{
+color: #f02;
+}
+
+footer p{
+    font-size: 0.75em; 
 }
