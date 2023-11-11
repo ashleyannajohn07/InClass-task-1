@@ -1,0 +1,98 @@
+<!--Ashley John ajohn2618@conestogac.on.ca-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InClass Task 1</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="structural">
+<h1>TASK ONE</h1>
+</header>
+
+<nav class="structural">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="structural">
+<h2>CONTACT</h2>
+
+<form>
+    <div>
+        <label for="name">NAME</label>
+        <input type="text" name="name" id="name" required autofocus>
+    </div>
+
+    <div>
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+
+    <fieldset>
+        <legend>WHAT SECTION OF PROG1245 ARE YOU IN?</legend>
+        <input type="radio" name="sec" value="4" id="4" required>
+        <label for="4">Section 4</label>
+        <br>
+        <input type="radio" name="sec" value="5" id="5">
+        <label for="5">Section 5</label>
+        <br>
+        <input type="radio" name="sec" value="8" id="8" checked>
+        <label for="8">Section 8</label>
+        <br>
+        <input type="radio" name="sec" value="10" id="10">
+        <label for="10">Section 10</label>
+        <br>
+    </fieldset>
+
+    <div>
+    <label for="help">WHAT DO YOU NEED HELP WITH?</label>
+    <select id="help" name="help" required>
+        <option value="" selected>select</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="both">HTML/CSS</option>
+    </select>
+    </div> 
+
+    <div>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+    </div>
+
+    <div>
+        <input type="checkbox" value="true" name="human" id="human" required>
+        <label for="human">I am human</label>
+    </div>
+    
+    <div>
+        <input type="submit" id="submit" value="submit">
+    </div>
+  
+</form>
+</main>
+
+<aside class="structural">
+    <h2>LINKS</h2>
+    <ul>
+        <li> <a href="https://it.conestogac.on.ca/">IT conestoga </a></li>
+        <li> <a href="https://www.w3schools.com/cs/cs_switch.php">C# switch</a></li>
+    </ul>
+</aside>
+
+<footer class="structural">
+<p>
+    &copy; Ashley John 2023
+</p>
+</footer>
+
+</body>
+</html>

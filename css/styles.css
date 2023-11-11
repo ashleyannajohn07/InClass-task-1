@@ -1,35 +1,77 @@
 /*Ashley John 8912618*/
+
+       
+
 body{
     font: normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
-    background-color: hsla(124, 33%, 66%, 0.679);
+    background-color: hsla(120, 7%, 54%, 0.679);
+}
+
+
+h1{
+    color: wheat;
+    font-size: 30px;
 }
 
 h2{
-     color:#B8b;
+     color:rgb(245,222,179);
      font-size: 2em;
 }
+
 header{
-    background-color: hsl(201, 37%, 42%);
+    background-color: hsl(231, 22%, 59%)
 }
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: indigo;
+    border: 2px solid indigo;
+    background-color: cornsilk;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+nav ul li a:hover{
+    color: cornsilk;
+    background-color: indigo;
+    border-color: cornsilk;
+}
+
 main{
     float: left;
     width: 65vw;
-    height: 60vh;
-    background-color: hsl(129, 37%, 41%)
+    background-color: hsl(231, 22%, 59%)
 }
 
 aside{
     float:right;
     width: 25vw;
-    height: 60vh;
-    background-color: hsl(0, 38%, 42%)
+    background-color: hsl(231, 22%, 59%)
+}
+
+aside li{
+        list-style-type: square; 
+        line-height: 2em; 
+        color: rgba(29, 61, 77, 0.5);
+        }
+a{
+    color: rgba(29, 61, 77, 0.5); 
+}
+
+aside a:hover{
+            color: #f02;
 }
 
 footer{
     clear: both;
-    background-color: hsl(320, 35%, 45%)
+    background-color: hsl(231, 22%, 59%)
 }
 
 .structural{
@@ -41,12 +83,34 @@ footer{
 #para1{
     color: rgb(95, 72, 21);
 }
+
 #para2{
     color: rgb(32, 70, 135);
 }
-
-a:hover{
-color: #f02;
+form{
+    border: 5px dashed wheat;
+    padding: 5px;
+}
+input[type=text], input[type=email], input[type=submit], select, option{
+    display: block;
+    width: 50%;
+    height: 2em;
+}
+input[type=radio], input[type=checkbox]{
+    height: 2em;
+    width: 2em;
+}
+select, option, label, legend, input[type=submit]{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+textarea{
+    display: block;
+    width: 50%;
+}
+fieldset{
+    border: none;
 }
 
 footer p{
