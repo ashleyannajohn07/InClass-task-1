@@ -1,23 +1,26 @@
 /*Ashley John 8912618*/
 
-       
+html{
+    font: normal normal normal 20px/1.5 Arial, Helvetica, sans-serif;
+}    
 
 body{
-    font: normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
     background-color: hsla(120, 7%, 54%, 0.679);
+    display:flex;
+    flex-direction: column;
 }
 
 
 h1{
     color: wheat;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 h2{
      color:rgb(245,222,179);
-     font-size: 2em;
+     font-size: 1.5rem;
 }
 
 header{
@@ -31,10 +34,10 @@ nav ul li{
 
 nav ul li a{
     color: indigo;
-    border: 2px solid indigo;
+    border: 0.25rem solid indigo;
     background-color: cornsilk;
     text-decoration: none;
-    padding: 5px;
+    padding: 0.25rem;
 
 }
 
@@ -44,15 +47,21 @@ nav ul li a:hover{
     border-color: cornsilk;
 }
 
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items: stretch;
+}
+
 main{
-    float: left;
-    width: 65vw;
+    flex: 2 1 70%
     background-color: hsl(231, 22%, 59%)
 }
 
 aside{
-    float:right;
-    width: 25vw;
+    flex: 1 1 30%
     background-color: hsl(231, 22%, 59%)
 }
 
@@ -70,14 +79,13 @@ aside a:hover{
 }
 
 footer{
-    clear: both;
     background-color: hsl(231, 22%, 59%)
 }
 
 .structural{
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    border: 0.1em solid black;
 }
 
 #para1{
@@ -88,8 +96,8 @@ footer{
     color: rgb(32, 70, 135);
 }
 form{
-    border: 5px dashed wheat;
-    padding: 5px;
+    border: 1rem dashed wheat;
+    padding: 0.25rem;
 }
 input[type=text], input[type=email], input[type=submit], select, option{
     display: block;
@@ -115,4 +123,34 @@ fieldset{
 
 footer p{
     font-size: 0.75em; 
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+
+figure{
+    border: 0.25rem solid indigo;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 10px;
+
+    }
+    #gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    section{
+        display: block;
+    }
 }
